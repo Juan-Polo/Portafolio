@@ -1,0 +1,184 @@
+.skills-container {
+  background-color: rgba(0, 255, 68, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills-container .skills-header {
+  background-color: rgba(66, 67, 71, 0.813);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+  height: 40px;
+  width: 401px;
+  border-radius: 20px;
+}
+.skills-container .skills-header button {
+  background-color: rgba(90, 90, 90, 0);
+  border-radius: 20px;
+  border: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.4rem;
+  font-weight: 00;
+  padding: 20px;
+  height: 30px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills-container .skills-header button.active {
+  background-color: rgb(255, 202, 133);
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+}
+
+.skills-container .skills-list,
+.skills-container .tools-list {
+  background-color: rgb(41, 42, 55);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-content: center;
+
+  padding: 35px 100px;
+  height: auto;
+  width: 800px;
+  gap: 50px 50px;
+  border-radius: 30px;
+}
+
+.skills-container .skills-list .skill-item,
+.skills-container .tools-list .tool-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  width: 105px;
+  height: 140px;
+  font-weight: lighter;
+  background-color: rgba(46, 113, 171, 0);
+  position: relative;
+}
+
+.skills-container .skills-list .skill-item::after,
+.skills-container .tools-list .tool-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(255, 202, 133);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+.skills-container .skills-list .skill-item:hover,
+.skills-container .tools-list .tool-item:hover {
+  animation: jump 0.6s ease-in-out; /* Ahora el elemento completo salta */
+}
+
+.skills-container .skills-list .skill-item:hover::after,
+.skills-container .tools-list .tool-item:hover::after {
+  transform: scaleX(1);
+}
+
+.skills-container .skills-list .skill-item .icon,
+.skills-container .tools-list .tool-item .icon {
+  background-color: rgb(29, 24, 24);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 20px;
+  border: solid 1px;
+  padding: 15px;
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+    background-color: rgba(0, 255, 68, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills-container .skills-header {
+    background-color: rgba(66, 67, 71, 0.813);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    width: 320px;
+    border-radius: 20px;
+  }
+  .skills-container .skills-header button {
+    background-color: rgba(90, 90, 90, 0);
+    border-radius: 20px;
+    border: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.3rem;
+    font-weight: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    padding: 0;
+  }
+
+  .skills-container .skills-list,
+  .skills-container .tools-list {
+    background-color: rgb(41, 42, 55);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    padding: 30px 0px;
+    height: auto;
+    width: 90%;
+    gap: 20px 10px;
+    border-radius: 30px;
+  }
+
+  .skills-container .skills-list .skill-item,
+  .skills-container .tools-list .tool-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    width: 100px;
+    height: 130px;
+    font-weight: lighter;
+    background-color: rgba(46, 113, 171, 0);
+  }
+
+  .skills-container .skills-list .skill-item .icon,
+  .skills-container .tools-list .tool-item .icon {
+    background-color: rgb(29, 24, 24);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: solid 1px;
+    padding: 15px;
+  }
+}

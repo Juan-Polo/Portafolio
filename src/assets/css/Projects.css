@@ -35,7 +35,7 @@
 }
 
 .projects .project-list {
-  background-color: rgba(41, 42, 55, 0);
+  background-color: rgba(19, 31, 201, 0);
 
   display: flex;
   flex-direction: column;
@@ -43,30 +43,32 @@
   justify-content: center;
   gap: 20px;
   border-radius: 30px;
-  padding: 30px 70px;
-  width: auto;
+
+  width: 90%;
+  margin: 0 auto;
 }
 
 .projects .project-list .project-card {
   background-color: rgb(41, 42, 55);
   width: 100%;
-  gap: 50px;
+  gap: 0px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0px 20px 50px;
   border-radius: 8px;
-  min-height: 250px; /* Ajusta según la necesidad */
+  min-height: 300px; /* Ajusta según la necesidad */
 }
 
 .projects .project-list article img {
-  width: 250px;
+  width: 22rem;
   height: 200px;
   display: block;
   border-radius: 8px;
-  background-color: rgba(83, 83, 85, 0);
-  padding: 20px 100px;
+  background-color: rgb(27, 27, 40);
+  padding: 30px 30px;
   transition: transform 0.3s ease-out;
 }
 .projects .project-list article img:hover {
@@ -79,6 +81,7 @@
   background-color: rgba(255, 0, 0, 0);
   text-align: left;
   margin: 0;
+
   color: rgb(255, 202, 133);
   font-size: 1.8rem;
   font-weight: 900;
@@ -91,21 +94,41 @@
 }
 
 .project-card .project-content {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(195, 46, 46, 0);
   text-align: left;
-  width: 850px;
+  width: 800px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
+  margin: 20px 50px;
 }
 
 .project-card .project-content .project-links a {
-  background-color: rgb(48, 47, 45);
+  background-color: rgb(27, 27, 40);
   border-radius: 10px;
   margin-right: 20px;
   padding: 12px 20px;
   color: white;
-  border: 1px white solid;
+  border: 1px rgb(255, 202, 133) solid;
+}
+
+.project-card .project-content .project-links a:hover {
+  background-color: rgb(255, 202, 133);
+  border-radius: 10px;
+  margin-right: 20px;
+  padding: 12px 20px;
+  color: black;
+  border: 1px rgb(255, 202, 133) solid;
+  animation: jump 0.6s ease-in-out;
+}
+
+.project-card .project-content .project-links {
+  background-color: rgba(255, 0, 0, 0);
+  height: 50px;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
 }
 
 .projects .carousel-container {
@@ -114,13 +137,13 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  gap: 20px;
+  gap: 0px;
 }
 .projects .carousel-container button {
   background-color: rgba(255, 202, 133, 0);
   color: rgb(255, 202, 133);
   border: 0;
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 @media (max-width: 480px) {
@@ -140,7 +163,7 @@
   .project-card .project-content {
     background-color: rgba(0, 0, 0, 0);
     text-align: left;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -151,14 +174,14 @@
     text-align: left;
     margin: 0;
     color: rgb(255, 202, 133);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 900;
   }
 
   .projects .project-list article p {
     margin-bottom: 10px;
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .projects .project-list {
@@ -205,7 +228,7 @@
     display: block;
     border-radius: 8px;
     background-color: rgba(83, 83, 85, 0);
-    padding: 20px 10px;
+    padding: 0px 0px;
     transition: transform 0.3s ease-out;
   }
 
@@ -234,5 +257,227 @@
     font-size: 3.5rem;
     margin-bottom: 40px;
     background-color: red;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .projects .project-list .project-card {
+    background-color: rgb(41, 42, 55);
+    width: 70%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-radius: 8px;
+    min-height: 250px; /* Ajusta según la necesidad */
+  }
+
+  .project-card .project-content {
+    background-color: rgba(176, 8, 8, 0);
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .projects .project-list article h2 {
+    background-color: rgba(255, 0, 0, 0);
+    text-align: left;
+    margin: 0;
+    color: rgb(255, 202, 133);
+    font-size: 1.4rem;
+    font-weight: 900;
+  }
+
+  .projects .project-list article p {
+    margin-bottom: 10px;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .projects .project-list {
+    background-color: rgba(187, 194, 47, 0);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .projects .carousel-container {
+    display: flex;
+    background-color: rgba(117, 105, 105, 0);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0px;
+  }
+
+  .projects .carousel-container button {
+    background-color: rgba(255, 202, 133, 0);
+    color: rgb(255, 202, 133);
+    border: 0;
+    font-size: 1rem;
+  }
+
+  .projects .carousel-content {
+    background-color: rgba(23, 126, 235, 0);
+    color: rgb(255, 202, 133);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    width: 90%;
+  }
+  .projects .project-list article img {
+    width: 100%;
+    height: 200px;
+    display: block;
+    border-radius: 8px;
+    background-color: rgba(35, 35, 207, 0.954);
+    padding: 0;
+    transition: transform 0.3s ease-out;
+  }
+
+  .projects .project-list article p {
+    color: white;
+  }
+
+  .projects .carousel-container button {
+    background-color: rgba(255, 202, 133, 0);
+    color: rgb(255, 202, 133);
+    border: 0;
+    font-size: 3rem;
+    position: absolute;
+    bottom: -80px;
+  }
+
+  .projects .carousel-container .carousel-button-left {
+    margin-left: -200px;
+  }
+
+  .projects .carousel-container .carousel-button-right {
+    margin-right: -200px;
+  }
+
+  .projects h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1360px) {
+  .projects .project-list {
+    background-color: rgba(19, 201, 180, 0);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 30px;
+    padding: 0px 0px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .projects .project-list .project-card {
+    background-color: rgb(41, 42, 55);
+    width: 100%;
+    gap: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 20px 0px;
+    border-radius: 8px;
+    min-height: 300px; /* Ajusta según la necesidad */
+  }
+
+  .projects .project-list article img {
+    width: 17rem;
+    height: 200px;
+    display: block;
+    border-radius: 8px;
+    background-color: rgb(27, 27, 40);
+    padding: 30px 30px;
+    margin-left: 30px;
+    transition: transform 0.3s ease-out;
+  }
+  .projects .project-list article img:hover {
+    transition: transform 0.3s ease-out;
+    transform-origin: center;
+    transform: rotate(-5deg);
+  }
+
+  .projects .project-list article h2 {
+    background-color: rgba(255, 0, 0, 0);
+    text-align: left;
+    margin: 0;
+
+    color: rgb(255, 202, 133);
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  .projects .project-list article p {
+    margin-bottom: 10px;
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .project-card .project-content {
+    background-color: rgba(46, 66, 195, 0);
+    text-align: left;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 50px;
+  }
+
+  .project-card .project-content .project-links a {
+    background-color: rgb(48, 47, 45);
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 12px 20px;
+    color: white;
+    border: 1px white solid;
+  }
+
+  .project-card .project-content .project-links {
+    background-color: rgba(255, 0, 0, 0);
+    height: 50px;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .projects .carousel-container {
+    display: flex;
+    background-color: rgba(198, 36, 36, 0);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 0;
+    width: 100%;
+    padding: 0px 50px;
+  }
+  .projects .carousel-container .carousel-button-left {
+    margin-right: 20px;
+  }
+
+  .projects .carousel-container .carousel-button-right {
+    margin-left: 20px;
   }
 }

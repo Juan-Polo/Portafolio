@@ -34,9 +34,9 @@ function App() {
         </section>
       </main>
 
-      <footer id="contact">
+      <section id="contact">
         <Footer />
-      </footer>
+      </section>
     </>
   );
 }

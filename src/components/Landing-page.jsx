@@ -16,7 +16,7 @@ const Landing = () => {
         </h2>
         <div className="icons-social">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/juan-manuel-polo-villegas-30964a329/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -24,7 +24,7 @@ const Landing = () => {
           </a>
 
           <a
-            href="https://linkedin.com"
+            href="https://github.com/Juan-Polo"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -32,7 +32,8 @@ const Landing = () => {
           </a>
 
           <a
-            href="https://wa.me/1234567890"
+            href="https://wa.me/573107141132
+"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -42,7 +43,7 @@ const Landing = () => {
       </div>
 
       <div className="div-foto">
-        <img src="./img/prototipo-avatar.jpg" alt="" />
+        <img src="./img/avatar.png" alt="Avatar" />
       </div>
     </div>
   );

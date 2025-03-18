@@ -7,9 +7,9 @@ import BlurText from "./BlurText";
 import { Icon } from "@iconify/react";
 
 const CV_URL =
-  "https://drive.google.com/file/d/14MkBhjkEwnu5TI5voTXzKBIg82ZoMsGH/preview";
+  "https://drive.google.com/file/d/1Br_t9prQhRgNs8hmcTKGdQ_3QduzIwYm/preview";
 const DOWNLOAD_URL =
-  "https://drive.google.com/uc?export=download&id=14MkBhjkEwnu5TI5voTXzKBIg82ZoMsGH";
+  "https://drive.google.com/uc?export=download&id=1Br_t9prQhRgNs8hmcTKGdQ_3QduzIwYm";
 const FILE_NAME = "JuanPoloCV.pdf";
 
 const Skills = () => {
@@ -102,7 +102,7 @@ const Skills = () => {
               height="38px "
               color="rgb(255, 202, 133)"
             />
-            [11/04/2032] - [11/04/2032"]
+            [22/04/2024] - [21/10/2024]
           </p>
 
           <p>

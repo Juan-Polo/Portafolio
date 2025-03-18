@@ -9,30 +9,25 @@ const projects = [
     title: "Our Little World",
     description:
       "Our Little World es una plataforma educativa desarrollada en Laravel (MVC) que facilita la gestión de cursos de primaria. Permite a los maestros personalizar grados, asignar imágenes, gestionar perfiles y organizar alumnos. Además, ofrece funcionalidades para subir horarios, PDFs, talleres, videos y actividades, permitiendo la entrega de tareas en PDF.",
-    img: "https://img.freepik.com/vector-premium/estudiante-completa-respuesta-prueba-examen-examen-escolar-universitario-concepto-educacion_476325-1545.jpg",
+    img: "./img/our.png",
     url: "URL_PROYECTO_1",
-    githubUrl: "URL_GITHUB",
+    githubUrl: "https://github.com/Juan-Polo/ourlittleworld-backend",
   },
   {
-    title: "Segundo Proyecto",
-    description: "Descripción breve del segundo proyecto...",
-    img: "https://img.freepik.com/vector-premium/estudiante-completa-respuesta-prueba-examen-examen-escolar-universitario-concepto-educacion_476325-1545.jpg",
+    title: "SENA Sonríe - Odontología",
+    description:
+      "Proyecto enfocado en la práctica y dominio de Bootstrap para crear un diseño responsive. Además, implementé un pequeño CRUD con Laravel para gestionar la información de forma dinámica, demostrando habilidades en el desarrollo web integral.",
+    img: "./img/odontology.png",
     url: "URL_PROYECTO_2",
-    githubUrl: "URL_GITHUB",
+    githubUrl: "https://github.com/Juan-Polo/odontology-proyect",
   },
   {
-    title: "Tercer Proyecto",
-    description: "Descripción breve del tercer proyecto...",
-    img: "https://img.freepik.com/vector-premium/estudiante-completa-respuesta-prueba-examen-examen-escolar-universitario-concepto-educacion_476325-1545.jpg",
-    url: "URL_PROYECTO_3",
-    githubUrl: "URL_GITHUB",
-  },
-  {
-    title: "Cuarto Proyecto",
-    description: "Descripción breve del cuarto proyecto...",
-    img: "https://img.freepik.com/vector-premium/estudiante-completa-respuesta-prueba-examen-examen-escolar-universitario-concepto-educacion_476325-1545.jpg",
-    url: "URL_PROYECTO_4",
-    githubUrl: "URL_GITHUB",
+    title: "Only Quality",
+    description:
+      "Página web informativa sobre fútbol con una sección de tienda en línea. Desarrollada íntegramente en HTML, CSS y JavaScript,.",
+    img: "./img/quality.png",
+    url: "",
+    githubUrl: "https://github.com/Juan-Polo/Frontend---practice",
   },
 ];
 
@@ -43,11 +38,11 @@ const ProjectCard = ({ title, description, img, url, githubUrl }) => (
       <h2>{title}</h2>
       <p>{description}</p>
       <div className="project-links">
-        {url && (
+        {/* {url && (
           <a href={url} target="_blank" rel="noopener noreferrer">
             Sitio web
           </a>
-        )}
+        )} */}
         {githubUrl && (
           <a href={githubUrl} target="_blank" rel="noopener noreferrer">
             GitHub

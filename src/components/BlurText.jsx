@@ -1,5 +1,5 @@
-import { useRef, useEffect, useState } from "react";
-import { useSprings, animated } from "@react-spring/web";
+import { useRef, useEffect, useState, memo } from "react";
+import { useSprings, animated, easings } from "@react-spring/web";
 
 const BlurText = ({
   text = "",
@@ -11,26 +11,20 @@ const BlurText = ({
   rootMargin = "0px",
   animationFrom,
   animationTo,
-  easing = "easeOutCubic",
+  easing = easings.easeOutCubic,
   onAnimationComplete,
 }) => {
-  const elements = animateBy === "words" ? text.split(" ") : text.split("");
+  const elements = animateBy === "words" ? text.split(" ") : [...text];
   const [inView, setInView] = useState(false);
-  const ref = useRef();
+  const ref = useRef(null);
   const animatedCount = useRef(0);
 
-  const defaultFrom =
-    direction === "top"
-      ? {
-          filter: "blur(10px)",
-          opacity: 0,
-          transform: "translate3d(0,-50px,0)",
-        }
-      : {
-          filter: "blur(10px)",
-          opacity: 0,
-          transform: "translate3d(0,50px,0)",
-        };
+  const defaultFrom = {
+    filter: "blur(10px)",
+    opacity: 0,
+    transform:
+      direction === "top" ? "translate3d(0,-50px,0)" : "translate3d(0,50px,0)",
+  };
 
   const defaultTo = [
     {
@@ -39,7 +33,11 @@ const BlurText = ({
       transform:
         direction === "top" ? "translate3d(0,5px,0)" : "translate3d(0,-5px,0)",
     },
-    { filter: "blur(0px)", opacity: 1, transform: "translate3d(0,0,0)" },
+    {
+      filter: "blur(0px)",
+      opacity: 1,
+      transform: "translate3d(0,0,0)",
+    },
   ];
 
   useEffect(() => {
@@ -47,13 +45,13 @@ const BlurText = ({
       ([entry]) => {
         if (entry.isIntersecting) {
           setInView(true);
-          observer.unobserve(ref.current);
+          observer.disconnect();
         }
       },
       { threshold, rootMargin }
     );
 
-    observer.observe(ref.current);
+    if (ref.current) observer.observe(ref.current);
 
     return () => observer.disconnect();
   }, [threshold, rootMargin]);
@@ -83,11 +81,11 @@ const BlurText = ({
 
   return (
     <p ref={ref} className={`blur-text ${className}`}>
-      {springs.map((props, index) => (
+      {springs.map((style, index) => (
         <animated.span
           key={index}
           style={{
-            ...props,
+            ...style,
             display: "inline-block",
             willChange: "transform, filter, opacity",
           }}
@@ -100,4 +98,4 @@ const BlurText = ({
   );
 };
 
-export default BlurText;
+export default memo(BlurText);

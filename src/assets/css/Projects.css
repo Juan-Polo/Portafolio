@@ -194,6 +194,7 @@
     align-items: center;
     width: 100%;
     gap: 0px;
+    background-color: rgba(255, 0, 0, 0);
   }
 
   .projects .carousel-container button {

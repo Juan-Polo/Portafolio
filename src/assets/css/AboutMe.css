@@ -1,5 +1,4 @@
 .about-me {
-  background-color: rgba(2, 2, 227, 0);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -10,7 +9,6 @@
 .about-me div {
   display: flex;
   flex-direction: row;
-  background-color: #ff6f0000;
   gap: 210px;
   align-items: center;
   justify-content: center;
@@ -42,7 +40,6 @@
 }
 
 .about-me article {
-  background-color: rgba(255, 0, 0, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,7 +64,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(128, 128, 128, 0);
 }
 
 .about-me address .container-contact {
@@ -101,7 +97,6 @@
 
 @media (max-width: 480px) {
   .about-me {
-    background-color: rgba(2, 2, 227, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,7 +106,6 @@
   .about-me div {
     display: flex;
     flex-direction: column;
-    background-color: #fff20002;
     gap: 40px;
     align-items: center;
     justify-content: center;
@@ -150,7 +144,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(128, 128, 128, 0);
   }
 
   .about-me address .container-contact {
@@ -169,7 +162,6 @@
 
 @media (min-width: 481px) and (max-width: 1024px) {
   .about-me {
-    background-color: rgba(2, 2, 227, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,7 +171,6 @@
   .about-me div {
     display: flex;
     flex-direction: column;
-    background-color: #fff20000;
     gap: 30px;
     align-items: center;
     justify-content: center;
@@ -213,7 +204,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(128, 128, 128, 0);
   }
 
   .about-me address .container-contact {

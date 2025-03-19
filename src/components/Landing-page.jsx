@@ -43,7 +43,7 @@ const Landing = () => {
       </div>
 
       <div className="div-foto">
-        <img src="./img/avatar.png" alt="Avatar" />
+        <img src="./img/avatar.jpg" alt="Avatar" />
       </div>
     </div>
   );

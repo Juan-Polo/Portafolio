@@ -11,7 +11,6 @@
 }
 
 .div-text-presentacion {
-  background-color: rgba(186, 9, 9, 0);
   width: 700px;
   gap: 0;
   display: flex;
@@ -21,7 +20,6 @@
 
 .div-presentacion h1 {
   color: #ffffff;
-  background-color: rgba(255, 0, 0, 0.016);
   font-family: "Times New Roman";
   font-size: 60px;
   margin: 0;
@@ -47,15 +45,16 @@
   opacity: 0;
   font-size: 30px;
   margin-top: 40px;
-  background-color: rgba(255, 0, 0, 0);
   animation: fadeInUp 0.5s ease-out forwards;
   animation-delay: 1.5s;
 }
 
 .div-foto {
-  background-color: rgba(255, 0, 0, 0);
-  height: 500px;
-  width: 500px;
+  height: 32vw;
+  width: 32vw;
+
+  max-width: 600px;
+  max-height: 600px;
   border: solid rgb(255, 255, 255) 0px;
   margin-top: 100px;
   border-radius: 50%;
@@ -72,7 +71,6 @@
 }
 
 .icons-social {
-  background-color: rgba(0, 0, 255, 0);
   gap: 20px;
   display: flex;
   flex-direction: row;
@@ -96,9 +94,8 @@
 
 @media (max-width: 480px) {
   .div-foto {
-    background-color: rgba(1, 107, 255, 0);
-    height: 35vh;
-    width: 35vh;
+    width: 70vw;
+    height: 70vw;
 
     border-radius: 50%;
     animation: fadeInUp 0.5s ease-out forwards;
@@ -127,7 +124,6 @@
   }
 
   .div-text-presentacion {
-    background-color: rgba(186, 9, 9, 0);
     height: auto;
     gap: 0;
     display: flex;
@@ -139,7 +135,6 @@
   }
 
   .icons-social {
-    background-color: rgba(0, 0, 255, 0);
     gap: 40px;
     display: flex;
     flex-direction: row;
@@ -157,7 +152,6 @@
 
   .div-presentacion h1 {
     color: #ffffff;
-    background-color: rgba(255, 0, 0, 0.016);
     font-family: "Times New Roman", Times, serif;
     font-size: 2rem;
     margin: 0;
@@ -191,8 +185,8 @@
 
 @media (min-width: 481px) and (max-width: 1024px) {
   .div-foto {
-    height: 40vh;
-    width: 40vh;
+    height: 45vw;
+    width: 45vw;
 
     border-radius: 50%;
     animation: fadeInUp 0.5s ease-out forwards;
@@ -221,7 +215,6 @@
   }
 
   .div-text-presentacion {
-    background-color: rgba(186, 9, 9, 0);
     height: auto;
     gap: 0;
     display: flex;
@@ -233,7 +226,6 @@
   }
 
   .icons-social {
-    background-color: rgba(0, 0, 255, 0);
     gap: 40px;
     display: flex;
     flex-direction: row;
@@ -251,7 +243,6 @@
 
   .div-presentacion h1 {
     color: #ffffff;
-    background-color: rgba(255, 0, 0, 0.016);
     font-family: "Times New Roman", Times, serif;
     font-size: 2rem;
     margin: 0;
@@ -277,17 +268,17 @@
     opacity: 0;
     font-size: 1.5rem;
     margin-top: 30px;
-    background-color: rgba(255, 0, 0, 0);
     animation: fadeInUp 0.5s ease-out forwards;
     animation-delay: 1.5s;
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1500px) {
+@media (min-width: 1025px) and (max-width: 1600px) {
   .div-foto {
-    height: 55vh;
-    width: 55vh;
-
+    height: 35vw;
+    width: 35vw;
+    max-width: 500px;
+    max-height: 500px;
     border-radius: 50%;
     animation: fadeInUp 0.5s ease-out forwards;
     animation-delay: 1.5s;
@@ -303,7 +294,7 @@
   }
   .div-presentacion {
     background-color: rgb(0, 0, 0);
-    gap: 20px;
+    gap: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -315,19 +306,18 @@
   }
 
   .div-text-presentacion {
-    background-color: rgba(186, 9, 9, 0);
     height: auto;
     gap: 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     margin: 0px;
     text-align: left;
+    background-color: #ffffff00;
   }
 
   .icons-social {
-    background-color: rgba(0, 0, 255, 0);
     gap: 40px;
     display: flex;
     flex-direction: row;
@@ -345,9 +335,8 @@
 
   .div-presentacion h1 {
     color: #ffffff;
-    background-color: rgba(0, 255, 13, 0);
     font-family: "Times New Roman", Times, serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 0;
     opacity: 0;
     animation: fadeInUp 0.5s ease-out forwards;
@@ -359,13 +348,13 @@
     color: rgb(255, 202, 133);
     /* color: #ff6d00; */
     margin: 0px 0px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     animation: fadeInUp 0.5s ease-out forwards;
     animation-delay: 1s;
     opacity: 0;
   }
   .div-presentacion h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 30px;
   }
 }

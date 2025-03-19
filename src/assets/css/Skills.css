@@ -1,5 +1,4 @@
 .skills-container {
-  background-color: rgba(0, 255, 68, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +15,6 @@
   border-radius: 20px;
 }
 .skills-container .skills-header button {
-  background-color: rgba(90, 90, 90, 0);
   border-radius: 20px;
   border: 0;
   font-family: "Times New Roman", Times, serif;
@@ -29,6 +27,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgba(3, 3, 3, 0);
 }
 .skills-container .skills-header button.active {
   background-color: rgb(255, 202, 133);
@@ -64,7 +63,6 @@
   width: 105px;
   height: 140px;
   font-weight: lighter;
-  background-color: rgba(46, 113, 171, 0);
   position: relative;
 }
 
@@ -119,11 +117,10 @@
     justify-content: space-between;
     align-items: center;
     height: 35px;
-    width: 320px;
+    width: 85vw;
     border-radius: 20px;
   }
   .skills-container .skills-header button {
-    background-color: rgba(90, 90, 90, 0);
     border-radius: 20px;
     border: 0;
     font-family: "Times New Roman", Times, serif;
@@ -165,7 +162,6 @@
     width: 100px;
     height: 130px;
     font-weight: lighter;
-    background-color: rgba(46, 113, 171, 0);
   }
 
   .skills-container .skills-list .skill-item .icon,
@@ -214,7 +210,6 @@
     width: 100px;
     height: 130px;
     font-weight: lighter;
-    background-color: rgba(46, 113, 171, 0);
   }
 
   .skills-container .skills-list .skill-item .icon,

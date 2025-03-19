@@ -100,13 +100,27 @@ const Footer = () => {
           <a
             href="https://www.linkedin.com/in/juan-manuel-polo-villegas-30964a329/"
             aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <Icon icon="devicon:linkedin" />
           </a>
-          <a href="https://github.com/Juan-Polo" aria-label="GitHub">
+
+          <a
+            href="https://github.com/Juan-Polo"
+            aria-label="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Icon icon="akar-icons:github-fill" />
           </a>
-          <a href="https://wa.me/573107141132" aria-label="WhatsApp">
+
+          <a
+            href="https://wa.me/573107141132"
+            aria-label="WhatsApp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Icon icon="logos:whatsapp-icon" />
           </a>
         </div>
